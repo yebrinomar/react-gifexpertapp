@@ -5,7 +5,7 @@ import {GifGridItem} from '../../components/GifGridItem'
 
 describe('Prueba en el <GifGridItem />', () => {
     const title = 'Un titulo';
-    const url = 'https://localhost/algo-jpg';
+    const url = 'https://localhost/algo.jpg';
 
     let wrapper = shallow(<GifGridItem title = {title} url = {url} />);
 
@@ -43,36 +43,4 @@ describe('Prueba en el <GifGridItem />', () => {
         expect( className.includes('animate__fadeIn')).toBe( true );
         
     }); 
-    
-    // test('debe de incrementar con el boton +1', () => {
-    //     const btn1 = wrapper.find('button').at(0).simulate('click');
-    //     //console.log(btn1.html());
-    //     const counterText = wrapper.find('h2').text().trim();
-        
-    //     expect( counterText ).toBe('11');
-        
-    // });
-
-    // test('debe de decrementar con el boton -1', () => {
-    //     const btn1 = wrapper.find('button').at(2).simulate('click');
-    //     //console.log(btn1.html());
-    //     const counterText = wrapper.find('h2').text().trim();
-        
-    //     expect( counterText ).toBe('9');
-        
-    // });
-
-    // test('debe de colocar el valor por defecto con el btn reset', () => {
-
-    //     const wrapper = shallow( <GifGridItem value = {105} /> );
-
-    //     wrapper.find('button').at(0).simulate('click');
-    //     wrapper.find('button').at(0).simulate('click');
-    //     wrapper.find('button').at(1).simulate('click');
-    //     //console.log(btn1.html());
-    //     const counterText = wrapper.find('h2').text().trim();
-        
-    //     expect( counterText ).toBe('105');
-        
-    // })  
 })

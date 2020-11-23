@@ -6,7 +6,7 @@ exports[`Prueba en el <GifGridItem /> debe de mostrar <GifGridItem /> correctame
 >
   <img
     alt="Un titulo"
-    src="https://localhost/algo-jpg"
+    src="https://localhost/algo.jpg"
   />
   <p>
     Un titulo
